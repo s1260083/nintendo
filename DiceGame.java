@@ -30,7 +30,8 @@ public class DiceGame{
 	System.out.println("Die 2:"+fv2);
 	fv3=fv1+fv2;
 	System.out.println("Total value:"+fv3);
-
+	if(fv3>7)System.out.println("You won!");
+		else System.out.println("You lose!");
     }
     public static void main(String[] args){
 
