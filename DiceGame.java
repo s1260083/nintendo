@@ -1,5 +1,21 @@
 import java.util.*;
+class Player{
+    private String name;
+    public Player(){
+	name="john";
+    }
+    public String getPlayer(){
+	return name;
 
+    }
+    public void player(){
+	System.out.println("   What is your name?");
+	System.out.println("   > "+getPlayer());
+	System.out.println("   Hello, "+getPlayer());
+
+    }
+
+}
 
 
 class Die{
@@ -33,6 +49,8 @@ public class DiceGame{
 
     }
     public static void main(String[] args){
+	Player p=new Player();
+	p.player();
 
 	play();
 
